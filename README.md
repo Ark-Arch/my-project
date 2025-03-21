@@ -34,7 +34,7 @@ jobs:
     publish:
         needs: build
 
-the above would overide that jobs run in parrallel!
+the above would overide the fact that jobs always run in parrallel!
 
 
 runs-on: ${{matrix.os}}
@@ -48,3 +48,12 @@ THEY WOULD BE EXECUTED IN PARALLEL!
 
 ## IMAGE BELOW: SHOWS RESULTS FROM THE SUCCESSFUL WORKFLOW
 ![alt text](image.png)
+
+
+
+WITH THE BELOW, YOU CAN WRITE MULTIPLE RUN COMMANDS WITH THE WORKFLOW using the PIPE! (|)
+    steps:
+      - name: Build and push dockr image
+        run: |
+          docker login cred
+          docker build ...
