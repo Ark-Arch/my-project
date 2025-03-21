@@ -60,3 +60,7 @@ WITH THE BELOW, YOU CAN WRITE MULTIPLE RUN COMMANDS WITH THE WORKFLOW using the 
 
 ## THE IMAGE BELOW SHOWS SUCCESSFULL OPERATION OF BOTH JOBS
 ![alt text](image-1.png)
+
+## THE IMAGE BELOW SHOWS POSSIBLE ERROR WITH THE PUSH DOCKER JOB
+to solve this, simply define exactly where the Dockerfile is on the directory.
+using `dockerfile: Dockerfile`
