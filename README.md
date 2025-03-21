@@ -18,3 +18,20 @@ jobs
     uses -> selects an action (whenever we are dealing with something in the repository.)
     with -> 
     run -> this command is used to write a command-line command
+
+IMPORTANT NOTES:
+- WORKFLOWS IN GITHUB ARE MANAGED BY GITHUB SERVERS! - BUT I CAN ALSO HOST MY OWN
+
+- for EVERY SINGLE JOB IN A WORKFLOW, IT RUNS IN A FRESH VIRTUAL ENVIRONMENT
+
+ON JOB RUNS ON A SINGLE SERVER AT A TIME.
+
+SO THERE COULD BE
+
+jobs:
+    build:
+        ...
+    publish:
+        needs: build
+
+the above would overide that jobs run in parrallel!
