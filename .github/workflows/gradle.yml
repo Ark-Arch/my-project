@@ -9,9 +9,9 @@ name: Java CI with Gradle # this is optional
 
 on: # this is the event that triggers the workflow!
   push: 
-    branches: [ "main" ] # everytime one pushes to main branch
+    branches: [ masters ] # everytime one pushes to main branch
   pull_request:
-    branches: [ "main" ] # everytime one makes a pull_request to main branch
+    branches: [ masters ] # everytime one makes a pull_request to main branch
 
 jobs: # [required]
 # jobs groups a set of tasks that would be executed
