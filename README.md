@@ -35,3 +35,13 @@ jobs:
         needs: build
 
 the above would overide that jobs run in parrallel!
+
+
+runs-on: ${{matrix.os}}
+strategy:
+    matrix
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+THE ABOVE WOULD HELP TEST/ RUN THE WORKFLOW IN THE THREE AVAILABLE VIRTUAL SERVERS PROVIDED BY GITHUB
+
+THEY WOULD BE EXECUTED IN PARALLEL!
