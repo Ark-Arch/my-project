@@ -57,3 +57,6 @@ WITH THE BELOW, YOU CAN WRITE MULTIPLE RUN COMMANDS WITH THE WORKFLOW using the 
         run: |
           docker login cred
           docker build ...
+
+## THE IMAGE BELOW SHOWS SUCCESSFULL OPERATION OF BOTH JOBS
+![alt text](image-1.png)
