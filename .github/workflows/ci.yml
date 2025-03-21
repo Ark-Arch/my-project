@@ -34,6 +34,8 @@ jobs:
   push-to-docker:
     needs: build-java
 
+    runs-on: ubuntu-latest
+
     steps:
       - name: Build and push dockr image
         uses: mr-smithers-excellent/docker-build-push@v4 
